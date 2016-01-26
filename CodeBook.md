@@ -16,22 +16,17 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The script run_analysis.R performs the following process to clean up the data and create tiny data sets:
 
 1. Merge the training and test sets to create one data set.
-
 2. Reads features.txt and uses only the measurements on the mean and standard deviation for each measurement.
-
 3. Reads activity_labels.txt and applies human readable activity names to name the activities in the data set.
-
 4. Labels the data set with descriptive names. (Names are converted to lower case; underscores and brackets are removed.)
-
 5. Merges the features with activity labels and subject IDs. The result is saved as tidyData.txt.
-
 6. The average of each measurement for each activity and each subject is merged to a second data set. The result is saved as tidyData2.txt.
 
 ###Variables
 
-testData - table contents of test/X_test.txt
-trainData - table contents of train/X_train.txt
-X - Measurement data. Combined data set of the two above variables
+- testData - table contents of test/X_test.txt
+- trainData - table contents of train/X_train.txt
+- X - Measurement data. Combined data set of the two above variables
 testSub - table contents of test/subject_test.txt
 trainSub - table contents of test/subject_train.txt
 S - Subjects. Combined data set of the two above variables
