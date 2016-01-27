@@ -1,8 +1,8 @@
 #!/usr/bin/env Rscript
 
 ## Read data sets and combine
-testData <- read.table("test/X_test.txt")
-trainData <- read.table("train/X_train.txt")
+testData <- read.table("sourceData/test/X_test.txt")
+trainData <- read.table("sourceData/train/X_train.txt")
 X <- rbind(testData, trainData)
 
 ## Garbage collection
@@ -10,8 +10,8 @@ rm(testData)
 rm(trainData)
 
 ## Read subjects and combine
-testSub <- read.table("test/subject_test.txt")
-trainSub <- read.table("train/subject_train.txt")
+testSub <- read.table("sourceData/test/subject_test.txt")
+trainSub <- read.table("sourceData/train/subject_train.txt")
 S <- rbind(testSub, trainSub)
 
 ## Garbage collection
@@ -19,8 +19,8 @@ rm(testSub)
 rm(trainSub)
 
 ## Read in data labels and combine
-testLabel <- read.table("test/y_test.txt")
-trainLabel <- read.table("train/y_train.txt")
+testLabel <- read.table("sourceData/test/y_test.txt")
+trainLabel <- read.table("sourceData/train/y_train.txt")
 Y <- rbind(testLabel, trainLabel)
 
 ## Garbage collection
