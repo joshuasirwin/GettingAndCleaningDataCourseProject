@@ -28,7 +28,7 @@ rm(testLabel)
 rm(trainLabel)
 
 ## Read Features List (to be used as column names for data)
-featuresList <- read.table("features.txt", stringsAsFactors=FALSE)
+featuresList <- read.table("sourceData/features.txt", stringsAsFactors=FALSE)
 
 ## Use only names from features list
 features <- featuresList$V2
@@ -43,7 +43,7 @@ names(X) <- gsub("\\(|\\)", "", names(X))
 names(X) <- tolower(names(X))
 
 ## Read ActivityList (to add descriptive names to data set)
-activities <- read.table("activity_labels.txt")
+activities <- read.table("sourceData/activity_labels.txt")
 activities[,2] = gsub("_", "", tolower(as.character(activities[,2])))
 Y[,1] = activities[Y[,1], 2]
 names(Y) <- "activity" ## Add activity label

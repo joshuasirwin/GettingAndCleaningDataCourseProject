@@ -41,7 +41,7 @@ The script run_analysis.R performs the following process to clean up the data an
 - uS - unique subjects from S
 - nS - number of unique subjects
 - nA - number of activities
--nC - number of columns in tidyData
+- nC - number of columns in tidyData
 - td - second tiny data set with average of each variable for each activity and subject
 
 ###Output
